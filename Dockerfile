@@ -7,6 +7,7 @@ RUN docker-php-ext-install mysqli && \
 RUN a2enmod rewrite
 RUN pwd
 RUN mkdir nabin
+RUN cd nabin
 
 RUN apt-get update \
 && apt-get install -y \
