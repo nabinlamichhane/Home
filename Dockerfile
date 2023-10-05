@@ -3,6 +3,7 @@ FROM 382797964672.dkr.ecr.us-east-1.amazonaws.com/php5.6-apache
 RUN docker-php-ext-install mysqli && \
     docker-php-ext-install pdo && \
     docker-php-ext-install pdo_mysql
+    ls -la
 
 RUN a2enmod rewrite
 RUN pwd
